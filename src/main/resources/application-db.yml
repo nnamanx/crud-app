@@ -4,6 +4,7 @@ spring:
     username: postgres
     password: 12131
     url: jdbc:postgresql://localhost:5432/crud
+    
   jpa:
     show-sql: true
     hibernate:

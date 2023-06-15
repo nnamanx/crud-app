@@ -1,6 +1,6 @@
 spring:
-application:
-  name:e-commerce
-profiles:
-include:
-  - db
+  application:
+    name: book-crud
+  profiles:
+    include:
+      - db
