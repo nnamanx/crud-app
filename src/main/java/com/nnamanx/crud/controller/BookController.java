@@ -85,6 +85,7 @@ public class BookController {
     @DeleteMapping("removing-book/{id}")
     public ResponseEntity<HttpStatus> deleteBookById(@PathVariable Long id) {
         bookRepository.deleteById(id);
+
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
