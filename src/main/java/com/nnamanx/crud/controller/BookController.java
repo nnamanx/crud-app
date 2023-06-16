@@ -31,18 +31,18 @@ public class BookController {
 
     @PostMapping("/new-book")
     public ResponseEntity<Book> addBook(@RequestBody Book book) {
-        return null;
+        return bookService.addBook(book);
     }
 
     @PostMapping("/book-update/{id}")
     public ResponseEntity<Book> updateBookById(@PathVariable Long id, @RequestBody Book newBookData) {
-        return null;
+        return bookService.updateBookById(id, newBookData);
 
     }
 
     @DeleteMapping("removing-book/{id}")
     public ResponseEntity<HttpStatus> deleteBookById(@PathVariable Long id) {
-        return null;
+        return bookService.deleteBookById(id);
     }
 
 }
