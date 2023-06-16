@@ -40,6 +40,7 @@ public class BookController {
 
     }
 
+
     @DeleteMapping("removing-book/{id}")
     public ResponseEntity<HttpStatus> deleteBookById(@PathVariable Long id) {
         return bookService.deleteBookById(id);
